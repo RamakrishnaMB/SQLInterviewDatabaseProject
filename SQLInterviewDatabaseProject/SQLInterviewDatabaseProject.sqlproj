@@ -58,8 +58,17 @@
     <Folder Include="Properties" />
     <Folder Include="SQLInterview" />
     <Folder Include="SQLInterview\ViewsBasics" />
+    <Folder Include="SQLInterview\PublishLocations" />
+    <Folder Include="SQLInterview\ViewsBasics\PostDeploymentScripts" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="SQLInterview\ViewsBasics\ViewBasicsPrerequestiesQuery.sql" />
+    <Build Include="SQLInterview\ViewsBasics\tblEmployee.sql" />
+    <Build Include="SQLInterview\ViewsBasics\tblDepartment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SQLInterview\PublishLocations\SQLInterviewDatabaseProject.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="SQLInterview\ViewsBasics\PostDeploymentScripts\Script.PostDeployViews1.sql" />
   </ItemGroup>
 </Project>
