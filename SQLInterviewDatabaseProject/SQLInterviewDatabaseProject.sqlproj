@@ -62,6 +62,8 @@
     <Folder Include="SQLInterview\ViewsBasics\PostDeploymentScripts" />
     <Folder Include="SQLInterview\ViewsBasics\AdvantagesOfView" />
     <Folder Include="SQLInterview\ViewsBasics\Tables" />
+    <Folder Include="SQLInterview\ViewsBasics\UpdatableViews" />
+    <Folder Include="SQLInterview\ViewsBasics\IndexedViews" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="SQLInterview\ViewsBasics\vwEmployeesByDepartment.sql" />
@@ -70,10 +72,13 @@
     <Build Include="SQLInterview\ViewsBasics\AdvantagesOfView\vwITDepartment_Employees.sql" />
     <Build Include="SQLInterview\ViewsBasics\AdvantagesOfView\vwEmployeesNonConfidentialData.sql" />
     <Build Include="SQLInterview\ViewsBasics\AdvantagesOfView\vwEmployeesCountByDepartment.sql" />
+    <Build Include="SQLInterview\ViewsBasics\UpdatableViews\vwEmployeesDataExceptSalary.sql" />
+    <Build Include="SQLInterview\ViewsBasics\UpdatableViews\vwEmployeeDetailsByDepartment.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SQLInterview\PublishLocations\SQLInterviewDatabaseProject.publish.xml" />
     <None Include="SQLInterview\ViewsBasics\ReusedScriptForViews.sql" />
+    <None Include="SQLInterview\ViewsBasics\UpdatableViews\NotBuildScriptToRunViewQuery.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="SQLInterview\ViewsBasics\PostDeploymentScripts\Script.PostDeployViews1.sql" />
