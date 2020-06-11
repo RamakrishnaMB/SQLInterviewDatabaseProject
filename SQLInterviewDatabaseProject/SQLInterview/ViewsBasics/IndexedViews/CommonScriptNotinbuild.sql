@@ -13,3 +13,14 @@ select * from vwTotalSalesByProduct
 -- To create index 
 Create Unique Clustered Index UIX_vwTotalSalesByProduct_Name
 on vwTotalSalesByProduct(Name)
+
+
+-- only in Enterprise and Developer editions of SQL Server will the Query Optimizer actually
+--take the index into consideration. for Other editions use 'With NOEXPAND' 
+
+select * from vwTotalSalesByProduct with (NOEXPAND)
+
+--Note: you can check Actual Plan in SSMS which is uing Clustered Index scan from view or going into Table scan to fetch
+--data inside the view.
+
+
